@@ -1,15 +1,4 @@
 
-@font-face {
-    font-family:'robotoregular';
-    src:url("../fonts/Roboto-Regular-webfont.eot");
-    src:url("../fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/Roboto-Regular-webfont.woff") format("woff"),
-        url("../fonts/Roboto-Regular-webfont.ttf") format("truetype"),
-        url("../fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
-    font-weight:normal;
-    font-style:normal;
-}
-
 :root {
     --animSpeed: 250ms;
 }
@@ -56,10 +45,11 @@ a:visited {
     color: white;
 }
 
-button {
+
+button,
+select {
     cursor: pointer;
     display: inline-block;
-    line-height: normal;
     font-weight: bold;
     color: rgb(255, 255, 255);
     border: 1px solid hsl(0, 0%, 100%);
@@ -67,15 +57,21 @@ button {
 
     padding: 5px 10px;
 }
-input {
-    line-height: normal;
-}
 input,
-button {
+button,
+select {
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
 }
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+
+
 button[disabled],
 html input[disabled] {
     cursor: default;
@@ -429,7 +425,7 @@ button.is-checked {
 }
 .post-masonry .post-thumb .title-over h4 {
     font-size: 16px;
-    font-family: 'robotoregular';
+    font-weight: 500;
 }
 .post-masonry .post-thumb .title-over h4 .label {
     float: right;
@@ -468,7 +464,6 @@ button.is-checked {
 }
 .post-masonry .post-thumb .post-hover h4 {
     font-size: 16px;
-    font-family: 'robotoregular';
     padding-top: 10px;
     margin: 5px;
 }

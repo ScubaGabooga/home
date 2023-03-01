@@ -12,20 +12,32 @@ const $grid = $('.blog-masonry').isotope({
     itemSelector: ".post-masonry",
     layoutMode: 'fitRows',
 	sortAscending: {
-		date: true,
-		dateAsc: false,
+		dateCreated: true,
+		dateCreatedAsc: false,
+		dateUpdated: true,
+		dateUpdatedAsc: false,
 		name: true,
 		nameAsc: false,
 		status: true
 	},
     getSortData: {
-		date: function(itemElem) {
-			var date = $(itemElem).find('.date').text();
+		dateCreated: function(itemElem) {
+			var date = $(itemElem).find('.dateCreated').text();
 			date = parseFloat(date.replaceAll("-", ""));
 			return date;
 		},
-		dateAsc: function(itemElem) {
-			var date = $(itemElem).find('.date').text();
+		dateCreatedAsc: function(itemElem) {
+			var date = $(itemElem).find('.dateCreated').text();
+			date = parseFloat(date.replaceAll("-", ""));
+			return date;
+		},
+		dateUpdated: function(itemElem) {
+			var date = $(itemElem).find('.dateUpdated').text();
+			date = parseFloat(date.replaceAll("-", ""));
+			return date;
+		},
+		dateUpdatedAsc: function(itemElem) {
+			var date = $(itemElem).find('.dateUpdated').text();
 			date = parseFloat(date.replaceAll("-", ""));
 			return date;
 		},
@@ -57,17 +69,17 @@ updateFilterCount();
 // filter functions
 var filterFns = {
     year2023: function() {
-      	var date = $(this).find('.date').text();
+      	var date = $(this).find('.dateUpdated').text();
       	date = parseInt(date.substring(0, 4));
       	return date == 2023;
     },
 	year2022: function() {
-		var date = $(this).find('.date').text();
+		var date = $(this).find('.dateUpdated').text();
 		date = parseInt(date.substring(0, 4));
 		return date == 2022;
   	},
 	year2021: function() {
-		var date = $(this).find('.date').text();
+		var date = $(this).find('.dateUpdated').text();
 		date = parseInt(date.substring(0, 4));
 		return date == 2021;
 	},

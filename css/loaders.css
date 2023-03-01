@@ -1,9 +1,12 @@
 
 /* 
+    ===== Add to HTML =====
+
     <div class="loader-wrapper">
         <div class="___"></div>
     </div>
 
+    ===== class =====
     .loader-rainbow-glow
     .loader-fullscreen-bar
     .loader-basic-spinner
@@ -19,7 +22,7 @@
     z-index: 9999;
 }
 
-/*  */
+/* ========================= */
 
 .loader-rainbow-glow {
     display: block;
@@ -43,7 +46,7 @@
     animation: spin 2s linear 0s infinite;
 }
 
-/*  */
+/* ========================= */
 
 .loader-fullscreen-bar {
     width: 100%;
@@ -76,7 +79,7 @@
     }
 }
 
-/*  */
+/* ========================= */
 
 .loader-basic-spinner {
     display: block;
@@ -121,4 +124,6 @@
     }
 }
 
-/*  */
+/* ========================= */
+
+

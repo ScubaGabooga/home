@@ -1,0 +1,51 @@
+2023-02-24
+    Created this website.
+    Did most of the layout.
+
+26
+    Fixed everything except the masonry items.
+    Added the search bar and filter/sort buttons, but have not implemented the js yet.
+    Cleaned up the css files.
+
+27, 28
+    Stupid JQuery, I don't know how to use this garbanzo.
+    Eventually got the Isotope plugin working with the grid.
+
+2023-03-01
+    Added meta data.
+    Small tweaks to css and html.
+
+
+
+
+
+
+
+
+Things to Add/Fix:
+    Change some of the filter buttons to dropdowns and toggles.
+    Implement JS for adding new items to the masonry.
+    Will remove jQuery and only use vanilla JS
+    A bit of inconsistance in naming, camelCase and kebab-case
+    JS is a bit repeatative (i don't know how to use Isotope or JQuery properly, so I don't know how to fix it)
+
+
+Links for Future Additions:
+    checkboxes and dropdowns, inclusive and exclusive filters - https://codepen.io/desandro/pen/YzeMxe
+    combination filters with checkboxes 2 - https://codepen.io/desandro/pen/MebyMR
+    combination filters with toggle buttons - https://codepen.io/desandro/pen/zrMXQv
+    filtering, with toggle buttons - https://codepen.io/desandro/pen/vEJbNr
+    sorting by selected category - https://codepen.io/desandro/pen/zGZywM
+    sort by filter - https://codepen.io/desandro/pen/WJoOrM/
+
+
+Useful Stuff (In order of least to most cancer):
+    http://www.templatemo.com/preview/templatemo_434_masonry - For the Layout/Template
+    Isotope - Reactive masonry
+    Font Awesome - Social Icons
+    JQuery - Donkey!
+    Not using anymore: Bootstrap - Even more Donkey!
+
+
+
+
