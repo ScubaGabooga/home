@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!-- 
+    2023-02-24, 
+        Created
+    
+    26 
+        Updated
+        Fixed everything except the masonry itmes
+        added more stuff, but didnt add the js yet
+
+    Useful Stuff (In order of least to most cancer)
+        http://www.templatemo.com/preview/templatemo_434_masonry
+        Isotope
+        Font Awesome
+        JQuery
+        Not using anymore: Bootstrap
+    27, 28
+        Stupid JQuery
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The World's Best Website Ever Created | Scuba Gabooga</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/loaders.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>        
+    <!-- <div class="loader-wrapper">
+        <div class="loader-fullscreen-bar"></div>
+    </div> -->
+
+    <div class="content-bg">
+        <img src="images/1-20.png" alt=""></img>
+        <div class="bg-overlay"></div>
+    </div>
+
+    <!-- ===== SITE TOP ===== -->
+    <div class="site-top">
+        <div class="site-header">
+            <div class="container">
+                <a class="site-brand"><span class="green">Monkey</span> Farming</a>
+                <ul class="social-icons"> 
+                    <!-- Order is backwards, float right -->
+                    <li><a href="https://github.com/ScubaGabooga" target="_blank"><span class="fa fa-github"></span></a></li>
+                    <!-- <li><a href="" target="_blank"><span class="fa fa-youtube-play"></span></a></li> -->
+                    <!-- <li><a href="" target="_blank"><span class="fa fa-steam"></span></a></li> -->
+                    <!-- <li><a href="" target="_blank">A</a></li>
+                    <li><a href="" target="_blank">B</a></li>
+                    <li><a href="" target="_blank">C</a></li>
+                    <li><a href="" target="_blank">D</a></li> -->
+                </ul>
+            </div>
+        </div> <!-- .site-header -->
+
+        <div class="site-banner">
+            <div class="container">
+                <h2 class="title">Big Big Super Duper 
+                    <span class="blue">Cowboy </span>
+                    <span class="green">Monkey </span>
+                </h2>
+
+                <p class="desc">
+                    <span class="green">Monkey</span> One,
+                    <span class="green">Monkey</span> Two.
+                    Thank Me, Thank you. 
+                    <br>
+                    APE APE APE APE APE APE APE APE APE APE APE 
+                    APE APE APE APE APE APE APE APE APE APE APE 
+                    APE APE APE APE APE APE APE APE APE APE APE 
+                    APE APE APE APE APE APE APE APE APE APE APE 
+                </p>
+
+                <div>
+                    <input type="search" class="quicksearch" placeholder="Search">
+                    <button class="filterCount" disabled>## Items</button>
+                    <!-- <button class="clearButton" onclick="
+                        var input = this.previousElementSibling; input.value = ''; input.focus();
+                    ">Clear</button> -->
+                </div>
+                <div id="filters" class="filterButtons button-group">
+                    <button disabled>Filter By:</button> 
+                    <button class="button is-checked" data-filter="*">Show All</button>
+
+
+
+                    <button disabled>|||</button> 
+                    <button class="button" data-filter="year2023">2023</button>
+                    <!-- <button class="button" data-filter="year2022">2022</button> -->
+                    <!-- <button class="button" data-filter="year2021">2021</button> -->
+                    <button disabled>|||</button> 
+                    <button class="button" data-filter=".color-completed">Completed</button>
+                    <button class="button" data-filter=".color-updating">Updating</button>
+                    <button class="button" data-filter=".color-paused">Paused</button>
+                    <button class="button" data-filter=".color-cancelled">Cancelled</button>
+                    <button disabled>|||</button> 
+                    <button class="button" data-filter="label_html">HTML/CSS</button>
+                    <button class="button" data-filter="label_js">JS</button>
+                    <!-- <button disabled>|||</button>  -->
+                    <br>
+                    <!-- <button class="button" data-filter="label_app">App</button> -->
+                    <!-- <button class="button" data-filter="label_game">Game</button> -->
+                    <!-- <button class="button" data-filter="label_guide">Guide</button> -->
+                    <!-- <button class="button" data-filter="label_idle">Idle Game</button> -->
+                    <!-- <button class="button" data-filter="label_tool">Tool</button> -->
+                    <button class="button" data-filter="label_showcase">Showcase</button>
+
+
+                    <!-- <br>
+                    <select>
+                        <option value="">Year</option>
+                        <option value=".year2023-drop">2023</option>
+                        <option value=".year2022-drop">2022</option>
+                        <option value=".year2021-drop">2021</option>
+                    </select>
+                    <br>
+                    TOGGLE Status:
+                    <button>Ape</button>
+                    <button>Ape</button>
+                    <button>Ape</button> -->
+                </div>
+
+                <div id="sorts" class="sortByButtons button-group">  
+                    <button disabled>Sort By:</button> 
+                    <!-- ===== Default Ordering Start ===== -->
+                    <button class="button is-checked" data-sort-by="original-order">Date ▼</button>
+                    <!-- OR -->
+                    <!-- <button class="button is-checked" data-sort-by="original-order">Default Order</button>
+                    <button class="button" data-sort-by="dateAsc">Date ▼</button> -->
+                    <!-- ===== Default Ordering End ===== -->
+
+                    <button class="button" data-sort-by="date">Date ▲</button>
+                    <button class="button" data-sort-by="name">Name ▼</button>
+                    <button class="button" data-sort-by="nameAsc">Name ▲</button>
+                    <button class="button" data-sort-by="status">Status</button>
+                </div>
+            </div>
+        </div> <!-- .site-banner -->
+    </div> <!-- .site-top -->
+    
+    <!-- ===== MAIN POSTS / Mansory ===== -->
+    <div class="main-posts container"><div class="blog-masonry masonry-true">
+        <!-- post-masonry -->
+        <div class="post-masonry the-resizer color-completed" data-status="1completed">
+            <div class="post-thumb">
+                <img src="images/1-20.png" alt="">
+                <div class="title-over">
+                    <h4>
+                        This Monkey Website
+                        <span class="label tag-html">HTML/CSS</span>
+                    </h4>
+                </div>
+                <div class="post-hover">
+                    <div class="inside">
+                        <a href="">
+                            <h4 class="name">This Monkey Website</h4>
+                            <h6 class="date">2023-02-24</h6>
+                            <div class="label-row">
+                                <span class="label tag-html">HTML/CSS</span>
+                                <span class="label tag-js">JS</span>
+                                <span class="label tag-showcase">Showcase</span>
+                                <span class="label tag-completed">Completed</span>
+                            </div>
+                            <p>                                            
+                                Resposive masonry layout using Isotope.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /.post-masonry -->
+
+
+
+
+        
+        <div class="post-masonry the-resizer color-completed" data-status="1completed"> <!-- CHANGE data-status -->
+            <div class="post-thumb">
+                <img src="" alt="">
+                <div class="title-over">
+                    <h4 class="name">
+                        **TITLE**
+                        <span class="label tag-completed">Completed</span>
+                        <span class="label tag-updating">Updating</span>
+                        <span class="label tag-paused">Paused</span>
+                        <span class="label tag-cancelled">Cancelled</span>
+
+                        <span class="label tag-html">HTML/CSS</span>
+                        <span class="label tag-js">JS</span>
+
+                        <span class="label tag-app">App</span>
+                        <span class="label tag-game">Game</span>
+                        <span class="label tag-guide">Guide</span>
+                        <span class="label tag-idle">Idle Game</span>
+                        <span class="label tag-tool">Tool</span>
+                        <span class="label tag-showcase">Showcase</span>
+                    </h4>
+                </div>
+                <div class="post-hover">
+                    <div class="inside">
+                        <a href="" target="_blank">
+                            <h4>**TITLE**</h4>
+                            <h6 class="date">2022-01-01</h6>
+                                <!-- Copy from tags above -->
+
+                            <p>                                            
+                                **DESC**
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.post-masonry -->
+
+
+
+
+    </div></div>
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="container">
+            <ul class="social-icons" style="display: inline-block;"> 
+                <li><a href="https://github.com/ScubaGabooga" target="_blank"><span class="fa fa-github"></span></a></li>
+                <!-- <li><a href="" target="_blank"><span class="fa fa-youtube-play"></span></a></li> -->
+                <!-- <li><a href="" target="_blank"><span class="fa fa-steam"></span></a></li> -->
+                <!-- <li><a href="" target="_blank">A</a></li>
+                <li><a href="" target="_blank">B</a></li>
+                <li><a href="" target="_blank">C</a></li>
+                <li><a href="" target="_blank">D</a></li> -->
+            </ul>
+            <p class="copyright-text">
+                Big Big &copy; 104BC - 3AD | Monkey Farming Company
+            </p>
+        </div>
+    </footer>
+
+
+
+    <script src="js/jquery-1.10.2.js"></script>
+    <!-- <script src="js/isotopev2.js"></script> -->
+    <script src="js/isotopev3.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Preloader -->
+    <script type="text/javascript">
+        //<![CDATA[
+        // $(window).load(function() { // makes sure the whole site is loaded
+        //     $('.loader').delay(0).fadeOut(); // will first fade out the loading animation
+        //     $('.loader-wrapper').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        //     $('body').delay(350).css({'overflow-y':'visible'});
+        // })
+        //]]>
+
+        // reveal all items after init
+        var $items = $grid.find('.post-masonry');
+        $grid.addClass('is-showing-items')
+            .isotope('revealItemElements', $items );
+    </script>
+
+</body>
+</html>
