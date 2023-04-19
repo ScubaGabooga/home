@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" page-theme="dark">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICBA, I will just use one icon, if it doesn't work, your browser sucks :D -->
+    <link rel="icon" type="image/png" sizes="128x128" href="assets/icon/favicon-128x128.png">
+    <!-- Screw all of the stuff for mobile like theme color of address/top bar -->
+
     <title>The World's Best Website Ever Created | Scuba Gabooga</title>
-    <link rel="icon" type="image/x-icon" href="images/ok.ico">
-    <!-- Add Favicon -->
-    <meta charset="utf-8">
-    <meta name="description" content="Big Big ScubaGabooga Home Page!">
-    <meta name="keywords" content="Scuba, Gabooga, ScubaGabooga, Homepage, Home, Insane, Crazy, Big, Massive">
-    <meta name="author" content="Scuba Gabooga">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- External CSS -->
     
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/loaders-1.0.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="lib/font-awesome.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- External JS -->
+
+    <!-- Main JS -->
+
+
 </head>
-<body>        
+<body>
     <!-- <div class="loader-wrapper">
         <div class="loader-fullscreen-bar"></div>
     </div> -->
 
     <div class="content-bg">
-        <img src="images/bg.png" alt="Background Image"></img>
+        <img src="assets/images/bg.png" alt="Background Image"></img>
         <div class="bg-overlay"></div>
     </div>
 
@@ -131,7 +138,7 @@
         <!-- post-masonry -->
         <div class="post-masonry the-resizer color-completed" data-status="1completed">
             <div class="post-thumb">
-                <img src="images/bg.png" alt="">
+                <img src="assets/images/bg.png" alt="">
                 <div class="title-over">
                     <h4>
                         This Monkey Website
@@ -162,7 +169,7 @@
             <!-- post-masonry -->
             <div class="post-masonry the-resizer color-cancelled" data-status="4cancelled">
                 <div class="post-thumb">
-                    <img src="images/burger.jpg" alt="">
+                    <img src="assets/images/burger.jpg" alt="">
                     <div class="title-over">
                         <h4>
                             Burger Game
@@ -193,7 +200,7 @@
             <!-- post-masonry -->
             <div class="post-masonry the-resizer color-cancelled" data-status="4cancelled">
                 <div class="post-thumb">
-                    <img src="images/crab.png" alt="">
+                    <img src="assets/images/crab.png" alt="">
                     <div class="title-over">
                         <h4>
                             Crab Idle Game
@@ -267,10 +274,10 @@
 
 
 
-    <script src="js/plugins/jquery-1.10.2.js"></script>
-    <!-- <script src="js/plugins/isotopev2.js"></script> -->
-    <script src="js/plugins/isotopev3.js"></script>
-    <script src="js/main.js"></script>
+    <script src="lib/jquery-1.10.2.js"></script>
+    <!-- <script src="lib/isotopev2.js"></script> -->
+    <script src="lib/isotopev3.js"></script>
+    <script src="js/base.js"></script>
 
     <!-- Preloader -->
     <script type="text/javascript">
@@ -287,6 +294,9 @@
         $grid.addClass('is-showing-items')
             .isotope('revealItemElements', $items );
     </script>
+
+
+
 
 </body>
 </html>
